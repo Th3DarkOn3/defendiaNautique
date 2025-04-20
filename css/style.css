@@ -237,13 +237,20 @@
     background-color: var(--green-primary) !important;
   }
   footer p{
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-size: 1.3rem !important;
   }
   
   footer h3{
     font-weight: 700 !important;
     font-size: 3rem !important;
+  }
+
+  .footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px !important;
+    margin-left: -40px !important;
   }
   
   @media screen and (max-width: 992px) {
@@ -274,6 +281,10 @@
     }
     .carousel__next {
       right: 20%;
+    }
+
+    .footer-links{
+      margin-left: 0px !important;
     }
   }
   
