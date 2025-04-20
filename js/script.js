@@ -21,6 +21,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdownElems = document.querySelectorAll(".dropdown-trigger");
     M.Dropdown.init(dropdownElems);
   });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+  
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center' // Al centro della viewport
+        });
+      }
+    });
+  });
+  
   
   // ---------------------- CAROSELLO 3D PERSONALIZZATO ----------------------
   
