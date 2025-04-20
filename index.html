@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed hide-on-med-and-down">
       <nav class="nav-wrapper">
         <div class="container">
           <!-- Home floating button -->
@@ -19,29 +19,37 @@
             <i class="material-icons">home</i>
           </a>
       
-          <!-- Mobile menu trigger -->
-          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-            <i class="material-icons">menu</i>
-          </a>
-      
           <!-- Desktop Menu -->
-          <ul class="right hide-on-med-and-down">
+          <ul class="right">
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown-skipper">Skipper <i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown-loisirs">Loisirs <i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown-bateau">Bateau <i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown-portuaire">Portuaire <i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
-      
-          <!-- Mobile sidenav -->
-          <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a class="dropdown-trigger" href="#!" data-target="mobile-skipper">Skipper <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="mobile-loisirs">Loisirs <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="mobile-bateau">Bateau <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="mobile-portuaire">Portuaire <i class="material-icons right">arrow_drop_down</i></a></li>
-          </ul>
         </div>
       </nav>
-    </div>      
+    </div>
+    <nav class="nav-wrapper hide-on-large-only">
+      <div class="container">
+        <!-- Home floating button -->
+        <a class="btn-floating btn-large waves-effect waves-light light-blue accent-2" href="https://www.defendia.fr">
+          <i class="material-icons">home</i>
+        </a>
+    
+        <!-- Mobile menu trigger -->
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+    
+        <!-- Mobile sidenav -->
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a class="dropdown-trigger" href="#!" data-target="mobile-skipper">Skipper <i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="mobile-loisirs">Loisirs <i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="mobile-bateau">Bateau <i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="mobile-portuaire">Portuaire <i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>      
       <!-- Dropdown Skipper -->
       <ul id="dropdown-skipper" class="dropdown-content ">
         <li><a href="#respSkipper">Responsabilité skipper</a></li>

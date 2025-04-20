@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Inizializza Materialize Components
     const sidenavElems = document.querySelectorAll(".sidenav");
-    M.Sidenav.init(sidenavElems);
+    M.Sidenav.init(sidenavElems,);
   
     const materialboxedElems = document.querySelectorAll(".materialboxed");
     M.Materialbox.init(materialboxedElems);
