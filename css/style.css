@@ -255,6 +255,11 @@
     margin-top: 20px !important;
     margin-left: -40px !important;
   }
+  .buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
   
   @media screen and (max-width: 992px) {
     .home-button {
